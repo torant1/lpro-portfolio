@@ -2,27 +2,40 @@
 
 @section('content')
         {{-- Home Section  --}}
-         <div  class="masthead text-center d-flex">
-            <div class="container">
-               <div class="row">
-                 <div class="col-lg-12">
-                     <h1 class=" text-uppercase "> yous ask ! we build</h1>
-                 </div>
-             </div> 
+        <div class="header demo">
+         <div class="content">
+            <div id="large-header" class="large-header">
+               <canvas id="demo-canvas"></canvas>
+               <h1 class="main-title"><span class="thin">Explore</span> Space</h1>
             </div>
          </div>
+      </div>
           {{-- ./Home Section  --}}
+            {{-- About Section  --}}
+         <div class="section-about">
+            <div class="container">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <h2 class="text-center">About me</h2>
+              </div>
+            </div>
+         </div>
+          {{-- ./about Section  --}}
            {{-- Skills Section  --}}
          <div class="section-skills">
             <div class="container">
-                 <h1>my skils</h1>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h2 class="text-center">my skils</h2>
+                </div> 
             </div>
          </div>
           {{-- ./Skills Section  --}}
            {{-- Work Section  --}}
-           <div class="section-skills">
+           <div class="section-work">
             <div class="container">
-                <h1> my works</h1>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="text-center"> my works</h2>
+              </div>
+                
             </div>
                
            </div>
@@ -30,7 +43,9 @@
 
            <div class="section-hire-me">
                 <div class="container">
-                    <h2>Why you should Hire me?</h2>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="text-center"> Hire me?</h2>
+                  </div>
                 </div>
                
            </div>
