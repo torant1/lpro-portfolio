@@ -29,16 +29,19 @@ margin-top:20%;
    background-position: center center;
    z-index: 1;
 }
-
+.demo{
+	height: 50%;
+}
 .demo .large-header {
    background-image: url("http://3.bp.blogspot.com/_y6xrWDcC1gk/TLN-UdZst9I/AAAAAAAAAPs/LHi44mZAiic/s1600/palmetto+2010+003.jpg");
- 
 }
+
 
 .main-title {
    position: absolute;
    margin: 0;
    padding: 0;
+   width: 100%;
    color: #F9F1E9;
    text-align: center;
    top: 50%;
@@ -47,9 +50,10 @@ margin-top:20%;
    transform: translate3d(-50%, -50%, 0);
 }
 
-.demo .main-title {
+.demo .main-title .text-header {
    text-transform: uppercase;
-   font-size: 4.2em;
+   font-weight: bold;
+   font-size: 3.2em;
    letter-spacing: 0.1em;
 }
 
@@ -57,11 +61,21 @@ margin-top:20%;
    font-weight: 200;
 }
 
-@media only screen and (max-width: 768px) {
-   .demo .main-title {
-      font-size: 3em;
-   }
+.main-title .text-list span{
+	color: white;
+	font-size:0.7em;
+	font-weight: bold;
+	margin-right:0.5em;
 }
+/*@media only screen and (max-width: 768px) {
+
+   .demo .main-title .text-header{
+      font-size: 1.5em;
+   }
+   .main-title .text-list span{
+   	display: none;
+   } 
+}*/
 .navbar{
 	background-color: rgba(0, 0, 0,0.5);
 	z-index: 2;
@@ -85,23 +99,32 @@ header nav{
 /*===========================================section-about=======================================*/
 
 .section-about{
-	margin-top: 450px;
 	height: 30%;
 }
 
+.about-photo{
+	margin-bottom: 1%;
+}
+.about-photo img{
+	width: 100px;
+	height: 100px;
+	border-radius: 500%;
+}
+.about-text{
+	text-align: center;
+}
 /*===========================================section-skills=======================================*/
 
 .section-skills{
-	margin-top: 0;
 	background-color: #F2F3F4;
 	height: 30%;
 }
 
-/*===========================================section-work=======================================*/
+/*===========================================section-work and partner=======================================*/
 .section-work{
 	margin: auto;
 	background-color: #F2F3F4;
-	height: 30%;
+	height: auto;
 }
 
 

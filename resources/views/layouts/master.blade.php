@@ -35,6 +35,7 @@
 	<title>{{$title}}</title>
 	<link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 	<link rel="stylesheet" href="{{asset('css/app.css')}}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
 
@@ -50,8 +51,8 @@
 
 		
 	<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -61,5 +62,6 @@
 
 
 	<script src="{{asset('js/bootstrap.js')}}"></script>
+	<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </body>
 </html>

@@ -1,17 +1,16 @@
 (function() {
 
-    var width, height, largeHeader, canvas, ctx, points, target, target2, animateHeader = true;
+    var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
     // Main
     initHeader();
     initAnimation();
-    addListeners();
+    // addListeners();
 
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight/2;
-        target = {x: 200, y: height/2};
-        target2 = {x: width, y: height/2};
+        target = {x: width/5, y: height/2};
 
 
         largeHeader = document.getElementById('large-header');
@@ -70,28 +69,28 @@
         }
     }
 
-    // Event handling
-    function addListeners() {
-        if(!('ontouchstart' in window)) {
-            window.addEventListener('mousemove', mouseMove);
-        }
-        window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
-    }
+    // // Event handling
+    // function addListeners() {
+    //     if(!('ontouchstart' in window)) {
+    //         window.addEventListener('mousemove', mouseMove);
+    //     }
+    //     window.addEventListener('scroll', scrollCheck);
+    //     window.addEventListener('resize', resize);
+    // }
 
-    function mouseMove(e) {
-        var posx = posy = 0;
-        if (e.pageX || e.pageY) {
-            posx = e.pageX;
-            posy = e.pageY;
-        }
-        else if (e.clientX || e.clientY)    {
-            posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-            posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-        }
-        target.x = posx;
-        target.y = posy;
-    }
+    // function mouseMove(e) {
+    //     var posx = posy = 0;
+    //     if (e.pageX || e.pageY) {
+    //         posx = e.pageX;
+    //         posy = e.pageY;
+    //     }
+    //     else if (e.clientX || e.clientY)    {
+    //         posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+    //         posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    //     }
+    //     target.x = posx;
+    //     target.y = posy;
+    // }
 
     function scrollCheck() {
         if(document.body.scrollTop > height) animateHeader = false;
@@ -141,8 +140,8 @@
     }
 
     function shiftPoint(p) {
-        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*100,
-            y: p.originY-50+Math.random()*100, ease:Circ.easeInOut,
+        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*300,
+            y: p.originY-50+Math.random()*200, ease:Circ.easeInOut,
             onComplete: function() {
                 shiftPoint(p);
             }});
